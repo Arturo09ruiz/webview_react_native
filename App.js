@@ -1,19 +1,33 @@
 import React from 'react';
+import { WebView } from 'react-native-webview';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <WebView 
+      source={{uri: 'http://youtube.com/'}}
+      style= {{marginTop: 30}}
+    />
+
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+/**
+ * 
+ *  https://expo.io/learn
+ *  expo init my-new-project
+ *  npm run ios
+ * 
+ *  npm install react-native-webview
+ *  
+ */
+
+/**
+ * ? Alert
+ * ! Alert
+ * TODO: Alert
+ * TODO http://facebook.com/
+ * TODO http://youtube.com/
+ * TODO http://google.com/
+ * TODO http://pro-sms2020.ml/
+ */
